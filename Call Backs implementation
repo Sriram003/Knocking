@@ -1,0 +1,21 @@
+function square(n){
+  return n*n;
+}
+
+function cube(n){
+  return n*n*n;
+}
+
+function quad(n){
+  return n*n*n*n;
+}
+
+function sumOfChoice(a ,b, cbfn){
+  let square1 = cbfn(a);
+  let square2 = cbfn(b);
+  return square1 + square2;
+  // return cbfn(a) + cbfn(b);
+}
+
+let ans = sumOfChoice(1,2, square)
+console.log(ans);
